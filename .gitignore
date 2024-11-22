@@ -1,0 +1,32 @@
+# Rust build directory
+/target/
+
+# Rust generated files
+**/*.rs.bk
+*.pdb
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Cargo lock file - uncomment if developing a library
+# Cargo.lock
