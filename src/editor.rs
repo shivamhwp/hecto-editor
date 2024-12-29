@@ -10,6 +10,7 @@ impl Editor {
     pub const fn default() -> Self {
         Self { should_quit: false }
     }
+
     pub fn run(&mut self) {
         Terminal::initialize().unwrap();
         let result = self.repl();
@@ -22,7 +23,9 @@ impl Editor {
         loop {
             let event = read()?;
             self.evaluate_event(&event);
+            Terminal::hide_cursor()?;
             self.refresh_screen()?;
+            Terminal::show_cursor()?;
             if self.should_quit {
                 break;
             }
