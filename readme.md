@@ -2,4 +2,4 @@
 
 currently building this.
 
-resources : [https://flenker.blog/hecto/resources](https://flenker.blog/hecto/resources)
+resources : [https://flenker.blog/hecto/](https://flenker.blog/hecto/)
